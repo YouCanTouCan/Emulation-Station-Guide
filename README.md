@@ -58,7 +58,7 @@ Any game you installed through Steam or just on your computer - it must be downl
 1. [WINDOWS ONLY] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a steam game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
    2. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
 3. [LINUX ONLY] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
-4. 2. Open Emulation Station
+4. Open Emulation Station
 3. Press Esc, then select "Scraper"
 4. Under "Scrape These Systems" select each of the systems you put ROM files into
 5. Click Start and wait till it's finished

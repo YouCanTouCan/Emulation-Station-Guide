@@ -19,10 +19,10 @@ First, lets actually download Emulation Station, and do some initial setup
 9. On line 135, change `<string name="ROMDirectory" value="/home/[REPLACE-THIS]/Games" />` to `<string name="ROMDirectory" value="[ROM Directory]" />` where [ROM Directory] is a folder you select somewhere on your computer. The specific location does not matter, but make sure you know what you set it as and that, ideally, the folder is empty. I used `home/Games`. 
 10. Save and close es_Settings.xml
 
-## 2. Signing up for a Screenscraper Account
-THIS ENTIRE STEP IS OPTIONAL! Emulation Station has two websites it can scrape, which is how it gets all the fun artwork and stuff. Screenscraper, which is superior for older games, and TheGamesDB, which is superior for newer PC games. Both work without an account, but Screenscraper is slower when you aren't signed in. Thus, if you have a decent number of ROMs, it may make sense to take the few minutes to make an account.
+## 2. [OPTIONAL] Signing up for a Screenscraper Account
+Emulation Station has two websites it can scrape, which is how it gets all the fun artwork and stuff. Screenscraper, which is superior for older games, and TheGamesDB, which is superior for newer PC games. Both work without an account, but Screenscraper is slower when you aren't signed in. Thus, if you have a decent number of ROMs, it may make sense to take the few minutes to make an account.
 
-1. Go to [this website.](https://screenscraper.fr/). Yes, I know it looks horrendous, but it has the goods we need, and once we are done here we won't ever need to lay eyes on it again.
+1. Go to [this website.](https://screenscraper.fr/) Yes, I know it looks horrendous, but it has the goods we need, and once we are done here we won't ever need to lay eyes on it again.
 2. At the top right, you'll see a yellow "Register" button. Click it.
 3. Scroll down until you see a spot to put in a Username, Password, and Email. Fill it out.
 4. Click the yellow "Send" button.
@@ -48,4 +48,17 @@ This part of the guide is for any game that you run through an emulator such as 
 
 1. Simply move the ROM file over to the relevant console folder inside your ROM Directory. For example, if you are emulating Pokemon White, go to the ROM Directory from steps 1.9 and 3.1, then go inside your "nds" folder, and put the Pokemon-White.nds file (or whatever its called for you) in there
 2. Open Emulation Station
-3. Press Esc, then select "Scraper," then 
+3. Press Esc, then select "Scraper"
+4. Under "Scrape These Systems" select each of the systems you put ROM files into
+5. Click Start and wait till it's finished
+
+**Computer Games:**
+Any game you installed through Steam or just on your computer - it must be downloaded on your computer to appear in Emulation Station, games you for example own on steam but don't have installed won't work. 
+
+1. [WINDOWS ONLY] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a steam game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
+   2. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
+3. [LINUX ONLY] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
+4. 2. Open Emulation Station
+3. Press Esc, then select "Scraper"
+4. Under "Scrape These Systems" select each of the systems you put ROM files into
+5. Click Start and wait till it's finished

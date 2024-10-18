@@ -53,8 +53,8 @@ This part of the guide is for any game that you run through an emulator such as 
 5. Under "Scrape These Systems" select each of the systems you put ROM files into
 6. Click Start and wait till it's finished
 
-**Computer Games:**
-Any game you installed through Steam or just on your computer - it must be downloaded on your computer to appear in Emulation Station, games you for example own on steam but don't have installed won't work. 
+**Steam Games:**
+Any game you installed through Steam. It must be downloaded on your computer to appear in Emulation Station, games you for example own on steam but don't have installed won't work. 
 
 1. [WINDOWS ONLY] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a steam game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
    2. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.

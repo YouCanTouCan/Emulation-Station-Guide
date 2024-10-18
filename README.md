@@ -49,8 +49,9 @@ This part of the guide is for any game that you run through an emulator such as 
 1. Simply move the ROM file over to the relevant console folder inside your ROM Directory. For example, if you are emulating Pokemon White, go to the ROM Directory from steps 1.9 and 3.1, then go inside your "nds" folder, and put the Pokemon-White.nds file (or whatever its called for you) in there
 2. Open Emulation Station
 3. Press Esc, then select "Scraper"
-4. Under "Scrape These Systems" select each of the systems you put ROM files into
-5. Click Start and wait till it's finished
+4. Under "Scrape from" select Screenscraper if it isn't already selected
+5. Under "Scrape These Systems" select each of the systems you put ROM files into
+6. Click Start and wait till it's finished
 
 **Computer Games:**
 Any game you installed through Steam or just on your computer - it must be downloaded on your computer to appear in Emulation Station, games you for example own on steam but don't have installed won't work. 
@@ -60,5 +61,6 @@ Any game you installed through Steam or just on your computer - it must be downl
 3. [LINUX ONLY] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
 4. Open Emulation Station
 3. Press Esc, then select "Scraper"
-4. Under "Scrape These Systems" select each of the systems you put ROM files into
-5. Click Start and wait till it's finished
+4. 4. Under "Scrape from" select TheGamesDB if it isn't already selected
+5. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
+6. Click Start and wait till it's finished

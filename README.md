@@ -1,5 +1,5 @@
 # Emulation Station Guide
-A description for how to get Emulation Station working with Steam, Retroarch, Epic Games, GOG, and other executable games when on either Aurora (a version of Fedora) or Windows.
+A description for how to get Emulation Station working with Retroarch, Steam, Prism Launcher (Minecraft), Lutris, Bottles, and any other games when on either Aurora (a version of Fedora) or Windows.
 
 The explanation for Aurora is likely extremely applicable to other distributions, Aurora is just what I personally use and can verify that as of writing this these steps work on. I do not use Windows myself, so that section I am less sure about.
 

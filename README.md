@@ -1,5 +1,5 @@
 # Emulation Station Guide
-A description for how to get Emulation Station working with Retroarch, Steam, Prism Launcher (Minecraft), Lutris, Bottles, and any other games when on either Aurora (a version of Fedora) or Windows.
+A description for how to get Emulation Station working with Retroarch, Steam, Epic Games, GOG, Amazon Prime Games, Prism Launcher (Minecraft), Lutris, Bottles, and any other games when on either Aurora (a version of Fedora) or Windows.
 
 The explanation for Aurora is likely extremely applicable to other distributions, Aurora is just what I personally use and can verify that as of writing this these steps work on. I do not use Windows myself, so that section I am less sure about.
 
@@ -64,3 +64,17 @@ Any game you installed through Steam. It must be downloaded on your computer to 
 4. Under "Scrape from" select TheGamesDB if it isn't already selected
 5. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
 6. Click Start and wait till it's finished
+
+**Epic Games, GOG, & Amazon Prime Games:**
+Any game installed through any of these three sources. It must be downloaded on your computer to appear in Emulation Station, games you for example own on epic games but don't have installed won't work. 
+
+**Minecraft Instances:**
+Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within Emulation Station. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from Emulation Station following this guide. IT IS ASSUMED YOU USE PRISM LAUNCHER AND HAVE IT SETUP ALREADY. Get it from [here](https://prismlauncher.org/download/) if not.
+
+**Other Executable Games:**
+Any game that isn't covered by another guide here and that you just run directly from an executable file on your computer. 
+
+**Lutris Games:**
+This 
+
+**Windows Games through Bottles:**

@@ -61,6 +61,6 @@ Any game you installed through Steam or just on your computer - it must be downl
 3. [LINUX ONLY] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
 4. Open Emulation Station
 3. Press Esc, then select "Scraper"
-4. 4. Under "Scrape from" select TheGamesDB if it isn't already selected
+4. Under "Scrape from" select TheGamesDB if it isn't already selected
 5. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
 6. Click Start and wait till it's finished

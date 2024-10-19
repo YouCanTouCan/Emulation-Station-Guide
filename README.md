@@ -65,16 +65,17 @@ Any game you installed through Steam. It must be downloaded on your computer to 
 5. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
 6. Click Start and wait till it's finished
 
-**Epic Games, GOG, & Amazon Prime Games:**
+### Epic Games, GOG, & Amazon Prime Games:
 Any game installed through any of these three sources. It must be downloaded on your computer to appear in Emulation Station, games you for example own on epic games but don't have installed won't work. 
 
-**Minecraft Instances:**
+### Minecraft Instances:
 Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within Emulation Station. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from Emulation Station following this guide. IT IS ASSUMED YOU USE PRISM LAUNCHER AND HAVE IT SETUP ALREADY. Get it from [here](https://prismlauncher.org/download/) if not.
 
-**Other Executable Games:**
+### Other Executable Games:
 Any game that isn't covered by another guide here and that you just run directly from an executable file on your computer. 
 
-**Lutris Games:**
-This 
+### Lutris Games:
+Lutris is a way to run games on Linux, if you are on Windows this section is useless to you. 
 
-**Windows Games through Bottles:**
+### Windows Games through Bottles:
+Bottles is a way to run Windows apps on Linux, if you are on Windows this section is useless to you. 

@@ -43,7 +43,7 @@ To make our lives easier further down the line, it is best to ensure that our ga
 ## 4. Entering Your Games
 Time to bring our games in!
 
-**Emulated Games:**
+### Emulated Games:
 This part of the guide is for any game that you run through an emulator such as Retroarch.
 
 1. Simply move the ROM file over to the relevant console folder inside your ROM Directory. For example, if you are emulating Pokemon White, go to the ROM Directory from steps 1.9 and 3.1, then go inside your "nds" folder, and put the Pokemon-White.nds file (or whatever its called for you) in there

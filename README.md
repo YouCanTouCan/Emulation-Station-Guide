@@ -57,10 +57,10 @@ This part of the guide is for any game that you run through Retroarch or any oth
 9. Click "Alternative Emnulators"
 10. For each system, select the emulator you want it to use by default. It should show Retroarch cores as well as any other standalone emulator you have installed.
 11. If you want a specific game to use a different emulator than the rest of the games in the system:
-   1. Navigate to the game
-   2. I only know how to do this with an XBox controller. Click the Options button on the controller
-   3. Click "Edit This Game's Metadata"
-   4. Select "Alternative Emulator" at the bottom and change it to whatever you want
+      1. Navigate to the game
+      2. I only know how to do this with an XBox controller. Click the Options button on the controller
+      3. Click "Edit This Game's Metadata"
+      4. Select "Alternative Emulator" at the bottom and change it to whatever you want
 
 
 ### Steam, Heroic Games Launcher, & Other Executable Games:

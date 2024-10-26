@@ -66,7 +66,7 @@ Any game you installed through Steam or Heroic Games Launcher (a frontend that u
 7. Click Start and wait till it's finished
 
 ### Steam (Flatpak):
-If you installed Steam through flatpak, it takes a little more work to get your games working through ES-DE unfortunately.
+If you installed Steam through flatpak, it takes a little more work to get your games working through ES-DE unfortunately. If you don't know what flatpak is, ignore this section.
 
 1. Remember the ROM-Directory folder you selected/made in step 1.9? I hope you do. Go there in your file explorer.
 2. Go into your folder for these games - perhaps "steam" or "pc" or so on.

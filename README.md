@@ -155,4 +155,9 @@ This section focuses on the artwork for the game shown in ES-DE.
    
 ### Adding a Custom System:
 
+1. Open your file manager
+2. If on Windows, Navigate to C:\Users\<username>\ES-DE. If on Linux, go to /home/<username>/ES-DE.
+3. Open themes, then iconic-es-de, then _inc, then systems, 
+
+
 ### Changing System Information:

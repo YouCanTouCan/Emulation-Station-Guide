@@ -43,8 +43,8 @@ To make our lives easier further down the line, it is best to ensure that our ga
 ## 4. Entering Your Games
 Time to bring our games in!
 
-### Emulated Games:
-This part of the guide is for any game that you run through an emulator such as Retroarch.
+### Retroarch:
+This part of the guide is for any game that you run through Retroarch.
 
 1. Simply move the ROM file over to the relevant console folder inside your ROM Directory. For example, if you are emulating Pokemon White, go to the ROM Directory from steps 1.9 and 3.1, then go inside your "nds" folder, and put the Pokemon-White.nds file (or whatever its called for you) in there
 2. Open ES-DE
@@ -53,8 +53,8 @@ This part of the guide is for any game that you run through an emulator such as 
 5. Under "Scrape These Systems" select each of the systems you put ROM files into
 6. Click Start and wait till it's finished
 
-### Steam Games, Epic Games, GOG, & Amazon Prime Games:
-Any game you installed through one of these four game launchers. It must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam or Heroic Games Launcher (Epic, Gog, and Prime) is installed through flatpak - check that section seperately.
+### Steam & Heroic Games Launcher:
+Any game you installed through one of these four game launchers. It must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.
 
 1. [🪟 WINDOWS ONLY 🪟] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" or whatever folder (whichever you prefer), and paste the files.
    a. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
@@ -65,25 +65,32 @@ Any game you installed through one of these four game launchers. It must be down
 6. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
 7. Click Start and wait till it's finished
 
-### Steam Games, Epic Games, GOG, & Amazon Prime Games [FLATPAK]:
-If you installed Steam or Heroic Games Launcher (a frontend for Epic, Gog, and Prime) through flatpak, it takes a little more work to get them working through ES-DE unfortunately.
+### Steam (Flatpak):
+If you installed Steam through flatpak, it takes a little more work to get your games working through ES-DE unfortunately.
 
 1. Remember the ROM-Directory folder you selected/made in step 1.9? I hope you do. Go there in your file explorer.
-2. Go into your folder for these games - perhaps "steam" or "pc" or "epic" or so on.
+2. Go into your folder for these games - perhaps "steam" or "pc" or so on.
 3. Make a file with the name of a game installed through this method, then .sh. So, for example. "Undertale.sh".
 4. Open the file
    1. If it is a steam game, paste the following into the file:
   
       `#!/bin/bash `     
       `flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260`
+      1. Replace the number at the end with the App ID from the game on the website [SteamDB](https://steamdb.info/) - for example, for Undertale it is 391540
+      2. Save the file and close it
+3. Open ES-DE
+4. Press Esc, then select "Scraper"
+5. Under "Scrape from" select TheGamesDB if it isn't already selected
+6. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
+7. Click Start and wait till it's finished
 
-### Minecraft Instances:
-Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from ES-DE following this guide. IT IS ASSUMED YOU USE PRISM LAUNCHER AND HAVE IT SETUP ALREADY. Get it from [here](https://prismlauncher.org/download/) if not.
+### Prism Launcher:
+Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from ES-DE following this guide.
 
 ### Other Executable Games:
 Any game that isn't covered by another guide here and that you just run directly from an executable file on your computer. 
 
-### Lutris Games:
+### Lutris:
 Lutris is a way to run games on Linux, if you are on Windows this section is useless to you. 
 
 ### Windows Games through Bottles:

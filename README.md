@@ -43,8 +43,8 @@ To make our lives easier further down the line, it is best to ensure that our ga
 ## 4. Entering Your Games
 Time to bring our games in!
 
-### Retroarch:
-This part of the guide is for any game that you run through Retroarch.
+### Retroarch & Other Emulators:
+This part of the guide is for any game that you run through Retroarch or any other Emulator, such as Primehack, Yuzu, or Ryujinx.
 
 1. Simply move the ROM file over to the relevant console folder inside your ROM Directory. For example, if you are emulating Pokemon White, go to the ROM Directory from steps 1.9 and 3.1, then go inside your "nds" folder, and put the Pokemon-White.nds file (or whatever its called for you) in there
 2. Open ES-DE
@@ -52,6 +52,15 @@ This part of the guide is for any game that you run through Retroarch.
 4. Under "Scrape from" select Screenscraper if it isn't already selected
 5. Under "Scrape These Systems" select each of the systems you put ROM files into
 6. Click Start and wait till it's finished
+7. Go back to the main settings menu
+8. Click "Other Settings"
+9. Click "Alternative Emnulators"
+10. For each system, select the emulator you want it to use by default. It should show Retroarch cores as well as any other standalone emulator you have installed.
+11. If you want a specific game to use a different emulator than the rest of the games in the system:
+   1. Navigate to the game
+   2. I only know how to do this with an XBox controller. Click the Options button on the controller
+   3. Click "Edit This Game's Metadata"
+   4. Select "Alternative Emulator" at the bottom and change it to whatever you want
 
 ### Steam, Heroic Games Launcher, & Other Executable Games:
 Any game you installed through Steam, installed through Heroic Games Launcher (a frontend that unified Epic Games, Gog, and Prime Games), or simply installed directly on your computer as an executable (and for which there is no other section in this guide). Games must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.

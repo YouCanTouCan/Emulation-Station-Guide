@@ -72,8 +72,9 @@ If you installed Steam or Heroic Games Launcher (a frontend for Epic, Gog, and P
 2. Go into your folder for these games - perhaps "steam" or "pc" or "epic" or so on.
 3. Make a file with the name of a game installed through this method, then .sh. So, for example. "Undertale.sh".
 4. Open the file
-   1. If it is a steam game, paste the following into the file: `#!/bin/bash
-flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260`
+   1. If it is a steam game, paste the following into the file:
+      `#!/bin/bash
+      flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260`
 
 ### Minecraft Instances:
 Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from ES-DE following this guide. IT IS ASSUMED YOU USE PRISM LAUNCHER AND HAVE IT SETUP ALREADY. Get it from [here](https://prismlauncher.org/download/) if not.

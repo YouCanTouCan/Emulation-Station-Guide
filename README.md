@@ -73,6 +73,7 @@ If you installed Steam or Heroic Games Launcher (a frontend for Epic, Gog, and P
 3. Make a file with the name of a game installed through this method, then .sh. So, for example. "Undertale.sh".
 4. Open the file
    1. If it is a steam game, paste the following into the file:
+  
       `#!/bin/bash `     
       `flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260`
 

@@ -155,9 +155,17 @@ This section focuses on the artwork for the game shown in ES-DE.
    
 ### Adding a Custom System:
 
-1. Open your file manager
-2. If on Windows, Navigate to C:\Users\<username>\ES-DE. If on Linux, go to /home/<username>/ES-DE.
-3. Open themes, then iconic-es-de, then _inc, then systems, 
+1. Open ES-DE
+4. Press Esc, then select "UI Settings", then change Theme Color Scheme to Custom-Dark
+2. Open your file manager
+3. If on Windows, Navigate to C:\Users\<username>\ES-DE. If on Linux, go to /home/<username>/ES-DE.
+4. Open themes, then iconic-es-de, then _inc, then systems, then classic-backgrounds
+5. Copy everything in the folder, go back one folder, then go into custom-backgrounds and paste.
+6. Go back one folder, then go into classic-overlay. Copy everything in the folder, go back one folder, then go into custom-overlay and paste
+7. 
 
 
 ### Changing System Information:
+
+### Changing System Artwork:
+

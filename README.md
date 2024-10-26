@@ -62,6 +62,7 @@ This part of the guide is for any game that you run through Retroarch or any oth
    3. Click "Edit This Game's Metadata"
    4. Select "Alternative Emulator" at the bottom and change it to whatever you want
 
+
 ### Steam, Heroic Games Launcher, & Other Executable Games:
 Any game you installed through Steam, installed through Heroic Games Launcher (a frontend that unified Epic Games, Gog, and Prime Games), or simply installed directly on your computer as an executable (and for which there is no other section in this guide). Games must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.
 

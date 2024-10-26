@@ -38,7 +38,7 @@ To make our lives easier further down the line, it is best to ensure that our ga
 
 1. Remember the ROM-Directory folder you selected/made in step 1.9? I hope you do. Go there in your file explorer.
 2. Create a separate folder for each console you want a section on within ES-DE. 
-   1. The following consoles are those with pre-made art and info for them. If you want to do another console, you can, it will just take some more work down the line, so I recommend following these names if you can. If you are, for example, emulating a DS, name the folder "nds" - keep it exactly the same as the names listed here: adam, arcade, atari5200, atari7800, atari800, atarixe, coco, colecovision, cps, dos, dreamcast, famicom, gameandwatch, gamegear, gb, gba, gbc, intellivision, lcdgames, mame, mastersystem, megacd, megacdjp, megadrivejp, model1, n3ds, n64, nds, neogeocd, neogeocdjp, nes, ngp, now-playing, pcengine, pico8, ps2, psvita, saturn, scummvm, ega32x, sega32xna, segacd, sfc, sgb, snes, snesna, steam, sufami, tg-cd, tg16, trs-80, wiiu, wonderswan, wonderswancolor, xbox, xbox360
+   a. The following consoles are those with pre-made art and info for them. If you want to do another console, you can, it will just take some more work down the line, so I recommend following these names if you can. If you are, for example, emulating a DS, name the folder "nds" - keep it exactly the same as the names listed here: adam, arcade, atari5200, atari7800, atari800, atarixe, coco, colecovision, cps, dos, dreamcast, famicom, gameandwatch, gamegear, gb, gba, gbc, intellivision, lcdgames, mame, mastersystem, megacd, megacdjp, megadrivejp, model1, n3ds, n64, nds, neogeocd, neogeocdjp, nes, ngp, now-playing, pcengine, pico8, ps2, psvita, saturn, scummvm, ega32x, sega32xna, segacd, sfc, sgb, snes, snesna, steam, sufami, tg-cd, tg16, trs-80, wiiu, wonderswan, wonderswancolor, xbox, xbox360
 
 ## 4. Entering Your Games
 Time to bring our games in!
@@ -57,13 +57,13 @@ This part of the guide is for any game that you run through an emulator such as 
 Any game you installed through one of these four game launchers. It must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam or Heroic Games Launcher (Epic, Gog, and Prime) is installed through flatpak - check that section seperately.
 
 1. [🪟 WINDOWS ONLY 🪟] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" or whatever folder (whichever you prefer), and paste the files.
-   2. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
-3. [🐧 LINUX ONLY 🐧] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
-4. Open ES-DE
-3. Press Esc, then select "Scraper"
-4. Under "Scrape from" select TheGamesDB if it isn't already selected
-5. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
-6. Click Start and wait till it's finished
+   a. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
+2. [🐧 LINUX ONLY 🐧] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
+3. Open ES-DE
+4. Press Esc, then select "Scraper"
+5. Under "Scrape from" select TheGamesDB if it isn't already selected
+6. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
+7. Click Start and wait till it's finished
 
 ### Steam Games, Epic Games, GOG, & Amazon Prime Games [FLATPAK]:
 If you installed Steam or Heroic Games Launcher (a frontend for Epic, Gog, and Prime) through flatpak, it takes a little more work to get them working through ES-DE unfortunately.
@@ -72,8 +72,8 @@ If you installed Steam or Heroic Games Launcher (a frontend for Epic, Gog, and P
 2. Go into your folder for these games - perhaps "steam" or "pc" or "epic" or so on.
 3. Make a file with the name of a game installed through this method, then .sh. So, for example. "Undertale.sh".
 4. Open the file
-   5. If it is a steam game, paste the following into the file: ''#!/bin/bash
-   flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260''
+   1. If it is a steam game, paste the following into the file: `#!/bin/bash
+flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260`
 
 ### Minecraft Instances:
 Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from ES-DE following this guide. IT IS ASSUMED YOU USE PRISM LAUNCHER AND HAVE IT SETUP ALREADY. Get it from [here](https://prismlauncher.org/download/) if not.

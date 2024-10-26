@@ -1,5 +1,5 @@
 # ES-DE Guide
-A description for how to get ES-DE working with Retroarch, Steam, Heroic Games Launcher (Epic Games, GOG, Amazon Prime Games), Prism Launcher (Minecraft), Lutris, Bottles, and any other games when on either Aurora (a version of Fedora) or Windows.
+A description for how to get ES-DE working with Retroarch, Steam, Heroic Games Launcher (Epic Games, GOG, Amazon Prime Games), Prism Launcher (Minecraft), Lutris, and any other games when on either Aurora (a version of Fedora) or Windows.
 
 The explanation for Aurora is likely extremely applicable to other distributions, Aurora is just what I personally use and can verify that as of writing this these steps work on. I do not use Windows myself, so that section I am less sure about.
 
@@ -53,12 +53,12 @@ This part of the guide is for any game that you run through Retroarch.
 5. Under "Scrape These Systems" select each of the systems you put ROM files into
 6. Click Start and wait till it's finished
 
-### Steam & Heroic Games Launcher:
-Any game you installed through Steam or Heroic Games Launcher (a frontend that unified Epic Games, Gog, and Prime Games). Games must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.
+### Steam, Heroic Games Launcher, & Other Executable Games:
+Any game you installed through Steam, installed through Heroic Games Launcher (a frontend that unified Epic Games, Gog, and Prime Games), or simply installed directly on your computer as an executable (and for which there is no other section in this guide). Games must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.
 
 1. [🪟 WINDOWS ONLY 🪟] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" or whatever folder (whichever you prefer), and paste the files.
    1. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
-2. [🐧 LINUX ONLY 🐧] Find your .desktop files for each steam game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
+2. [🐧 LINUX ONLY 🐧] Find your .desktop files for each game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
 3. Open ES-DE
 4. Press Esc, then select "Scraper"
 5. Under "Scrape from" select TheGamesDB if it isn't already selected
@@ -66,7 +66,7 @@ Any game you installed through Steam or Heroic Games Launcher (a frontend that u
 7. Click Start and wait till it's finished
 
 ### Steam (Flatpak):
-If you installed Steam through flatpak, it takes a little more work to get your games working through ES-DE unfortunately. If you don't know what flatpak is, ignore this section.
+If you installed Steam through flatpak, it takes a little more work to get your games working through ES-DE unfortunately due to [this open issue](https://github.com/flathub/com.valvesoftware.Steam/issues/85). If you don't know what flatpak is, ignore this section.
 
 1. Remember the ROM-Directory folder you selected/made in step 1.9? I hope you do. Go there in your file explorer.
 2. Go into your folder for these games - perhaps "steam" or "pc" or so on.
@@ -84,26 +84,65 @@ If you installed Steam through flatpak, it takes a little more work to get your 
 7. Click Start and wait till it's finished
 
 ### Prism Launcher:
-Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from ES-DE following this guide.
+This is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on.
 
 1. Open Prism Launcher
 2. Click on the name of the instance you want to add to ES-DE
-3. Click on "Folder" in the far right, and your file manager should open to a specific folder. Note the name of the folder that you are in.
-4. Remember the ROM-Directory folder you selected/made in step 1.9? I hope you do. Go there in your file explorer.
-5. Go into your folder you want the instance to be in - perhaps "steam" or "pc" or so on.
-6. Make a file with the name of the instance as you want it to show up in ES-DE, then .sh. So, for example. "Minecraft.sh".
-7. Open the file
-   5. Paste the following into the file:  
-      `#!/bin/bash
-      flatpak run org.prismlauncher.PrismLauncher --launch Forgified Core Custom`
-      1. Replace the name "Forgified Core Custom" at the end with the name of the folder from step 3 of this section.
-      2. Save the file and close it
-
-### Other Executable Games:
-Any game that isn't covered by another guide here and that you just run directly from an executable file on your computer. 
+3. Click on "Create Shortcut" in the far right, and it will open a menu to create a file. Name the file whatever you want the name to be in ES-DE, and place it inside the folder thats in your ROM-Directory you want the instance to be in - perhaps "steam" or "pc" or so on.
+8. Open ES-DE
+4. Press Esc, then select "Scraper"
+5. Under "Scrape from" select TheGamesDB if it isn't already selected
+6. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
+7. Click Start and wait till it's finished
+8. This probably won't work unless your instance is simply named "Minecraft" or "Minecraft: Java Edition" - metadata will probably need to be brought in automatically, check the next section on manually adding metadata.
 
 ### Lutris:
 Lutris is a way to run games on Linux, if you are on Windows this section is useless to you. 
 
-### Windows Games through Bottles:
-Bottles is a way to run Windows apps on Linux, if you are on Windows this section is useless to you. 
+1. Open Lutris
+2. Right click on the game you want to add to ES-DE
+3. Click on "Create Application Menu Shortcut"
+4. [🪟 WINDOWS ONLY 🪟] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" or whatever folder (whichever you prefer), and paste the files.
+   1. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
+2. [🐧 LINUX ONLY 🐧] Find your .desktop files for each game you have. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" folder (whichever you prefer), and paste the files.
+8. Open ES-DE
+4. Press Esc, then select "Scraper"
+5. Under "Scrape from" select Screenscraper if it isn't already selected
+6. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
+7. Click Start and wait till it's finished.
+
+## 4. Customizing Metadata
+Sometimes the scrapers dont work perfectly, and we need to manually fix some stuff.
+
+### Changing Game Information:
+This section doesn't concern artwork, as that's harder to change - it just concerns the written information for each game.
+
+1. If you have an XBox Controller handy:
+   2. Open ES-De
+   3. Navigate to the game you want to change the information about
+   4. Click the Options Button on your controller
+   5. Select "Edit This Game's Metadata"
+   6. Adjust whatever it is you aren't happy with!
+2. If you dont have a controller handy:
+   8. Open your file manager
+   9. If on Windows, Navigate to C:\Users\<username>\ES-DE. If on Linux, go to /home/<username>/ES-DE. Then go in the gamelists folder, and then the folder for the system the game you want to change is in.
+   10. Open gamelist.xml inside a text editor like Notepad or KWrite.
+   11. You can edit the information for the game inside this file. Not as easy as with an XBox Controller, sorry.
+
+### Changing Game Artwork:
+This section focuses on the artwork for the game shown in ES-DE.
+
+1. Open your file manager
+2. If on Windows, Navigate to C:\Users\<username>\ES-DE. If on Linux, go to /home/<username>/ES-DE.
+3. Open downloaded_media, then the folder for the system that has the game you want to change
+4. There are a series of folders here for the different kinds of art, already pregenerated by the scrapers. Simply replace or add any artwork you would like, but make sure it is named exactly the same as the gamefile inside your ROM-Directory. For example, if your game is Undertale.desktop, your cover art should be Undertale.png
+5. Open ES-DE
+4. Press Esc, then select "Scraper"
+5. Under "Scrape These Systems" select each of the systems that have games you are changing the artwork for
+6. Select "Miximage Settings"
+7. At the very bottom of this menu, select "Offline Generator"
+8. Click Start and wait till it's finished.
+   
+### Adding a Custom System:
+
+### Changing System Information:

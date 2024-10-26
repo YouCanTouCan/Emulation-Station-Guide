@@ -111,7 +111,7 @@ Lutris is a way to run games on Linux, if you are on Windows this section is use
 6. Under "Scrape These Systems" select each of the systems you put the .url or .desktop into
 7. Click Start and wait till it's finished.
 
-## 4. Customizing Metadata
+## 5. Customizing Metadata
 Sometimes the scrapers dont work perfectly, and we need to manually fix some stuff.
 
 ### Changing Game Information:

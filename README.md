@@ -1,5 +1,5 @@
 # ES-DE Guide
-A description for how to get ES-DE working with Retroarch, Steam, Epic Games, GOG, Amazon Prime Games, Prism Launcher (Minecraft), Lutris, Bottles, and any other games when on either Aurora (a version of Fedora) or Windows.
+A description for how to get ES-DE working with Retroarch, Steam, Heroic Games Launcher (Epic Games, GOG, Amazon Prime Games), Prism Launcher (Minecraft), Lutris, Bottles, and any other games when on either Aurora (a version of Fedora) or Windows.
 
 The explanation for Aurora is likely extremely applicable to other distributions, Aurora is just what I personally use and can verify that as of writing this these steps work on. I do not use Windows myself, so that section I am less sure about.
 
@@ -72,8 +72,7 @@ If you installed Steam through flatpak, it takes a little more work to get your 
 2. Go into your folder for these games - perhaps "steam" or "pc" or so on.
 3. Make a file with the name of a game installed through this method, then .sh. So, for example. "Undertale.sh".
 4. Open the file
-   1. If it is a steam game, paste the following into the file:
-  
+   1. If it is a steam game, paste the following into the file:  
       `#!/bin/bash `     
       `flatpak run com.valvesoftware.Steam :steam steam://rungameid/200260`
       1. Replace the number at the end with the App ID from the game on the website [SteamDB](https://steamdb.info/) - for example, for Undertale it is 391540
@@ -86,6 +85,19 @@ If you installed Steam through flatpak, it takes a little more work to get your 
 
 ### Prism Launcher:
 Kinda niche, but this is the section for if you want to run a specific instance of Minecraft from within ES-DE. This can be a specific set of mods, resource packs, shaderpacks, settings, or so on. You can even launch into a Minecraft server directly from ES-DE following this guide.
+
+1. Open Prism Launcher
+2. Click on the name of the instance you want to add to ES-DE
+3. Click on "Folder" in the far right, and your file manager should open to a specific folder. Note the name of the folder that you are in.
+4. Remember the ROM-Directory folder you selected/made in step 1.9? I hope you do. Go there in your file explorer.
+5. Go into your folder you want the instance to be in - perhaps "steam" or "pc" or so on.
+6. Make a file with the name of the instance as you want it to show up in ES-DE, then .sh. So, for example. "Minecraft.sh".
+7. Open the file
+   5. Paste the following into the file:  
+      `#!/bin/bash
+      flatpak run org.prismlauncher.PrismLauncher --launch Forgified Core Custom`
+      1. Replace the name "Forgified Core Custom" at the end with the name of the folder from step 3 of this section.
+      2. Save the file and close it
 
 ### Other Executable Games:
 Any game that isn't covered by another guide here and that you just run directly from an executable file on your computer. 

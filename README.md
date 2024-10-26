@@ -54,7 +54,7 @@ This part of the guide is for any game that you run through Retroarch.
 6. Click Start and wait till it's finished
 
 ### Steam & Heroic Games Launcher:
-Any game you installed through one of these four game launchers. It must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.
+Any game you installed through Steam or Heroic Games Launcher (a frontend that unified Epic Games, Gog, and Prime Games). Games must be downloaded on your computer to appear in ES-DE, games you for example own on steam but don't have installed won't work. For linux users, it takes more effort if Steam is installed through flatpak - check that section seperately.
 
 1. [🪟 WINDOWS ONLY 🪟] Go to C:\ProgramData\Microsoft\Windows\Start Menu\Programs and find all files that are the name of a game then .url - for example Undertale.url. Select all these files and copy them. Go to your ROM Directory from steps 1.9 and 3.1, then go inside your "steam" or "pc" or whatever folder (whichever you prefer), and paste the files.
    a. If your C:\ProgramData\Microsoft\Windows\Start Menu\Programs is empty or doesn't have the games, maybe try checking AppData\Roaming\Microsoft\Windows\Start Menu\Programs\ instead. They should be in one of the two.
